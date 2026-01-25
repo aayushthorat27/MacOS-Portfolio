@@ -2,7 +2,7 @@
 import WindowWrapper from '#hoc/WindowWrapper.jsx';
 import { techStack } from '#constants';
 import { Check, Flag } from 'lucide-react';
-import WindowControls from '#components/windowControls';
+import { WindowControls } from '#components';
 
 const Terminal = () => {
   return (
