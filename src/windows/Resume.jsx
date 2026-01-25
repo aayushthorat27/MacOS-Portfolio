@@ -1,5 +1,6 @@
 import { WindowControls } from "#components";
 import WindowWrapper from "#hoc/WindowWrapper";
+import useWindowStore from "#store/window";
 import { Download } from "lucide-react";
 
 import { Document, Page, pdfjs } from 'react-pdf';
@@ -12,19 +13,29 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 const Resume = () => {
+
+    const { windows } = useWindowStore();
+    const { isMaximized } = windows.resume;
+
+
   return (
     <>
         <div id='window-header'>
             <WindowControls target="resume" />
             <h2>Resume.pdf</h2>
-            <a href="files/Aayush_Thorat_Resume.pdf" download className="cursor-pointer" title="Download Resume">
-                <Download className="icon" />
+            <a href="files/Aayush_Thorat_Resume.pdf" download title="Download Resume">
+                <Download className="icon cursor-pointer" />
             </a>
         </div>
 
         <div className="overflow-y-auto h-full">
             <Document file="files/Aayush_Thorat_Resume.pdf" className="flex items-center justify-center">
-                <Page pageNumber={1} renderTextLayer renderAnnotationLayer />
+                <Page 
+                    pageNumber={1} 
+                    renderTextLayer 
+                    renderAnnotationLayer 
+                    scale={isMaximized ? 1.5 : 1}
+                />
             </Document>
         </div>
     </>

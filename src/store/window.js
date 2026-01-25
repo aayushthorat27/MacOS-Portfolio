@@ -21,7 +21,9 @@ const useWindowStore = create(immer((set) => ({
     minimizeWindow: (windowkey) => set((state) => { 
         const window = state.windows[windowkey];
         if (!window) return;
+        console.log(window);
         window.isMinimized = !window.isMinimized;
+        // window.isOpen = window.isMinimized ? false : true;
     }),
     closeWindow: (windowkey) => set((state) => {
         const window = state.windows[windowkey];

@@ -357,7 +357,7 @@ body {
   }
 
   #txtfile {
-    @apply w-md absolute top-36 right-32 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply w-md h-10/12 absolute top-28 right-32 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
     h2 {
       @apply font-bold text-sm text-center w-full;
@@ -365,7 +365,7 @@ body {
   }
 
   #imgfile {
-    @apply w-xl absolute top-40 left-2/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply w-xl absolute top-20 right-1/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
     #window-header {
       p {
