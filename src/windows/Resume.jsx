@@ -37,6 +37,7 @@ const Resume = () => {
                     scale={isMaximized ? 1.5 : 1}
                 />
             </Document>
+            <div className={isMaximized ? "p-8" : "p-2"} />
         </div>
     </>
   )
