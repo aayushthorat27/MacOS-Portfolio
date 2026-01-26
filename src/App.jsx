@@ -4,7 +4,7 @@ import { Draggable } from 'gsap/Draggable';
 import { Dock, Navbar, Welcome } from '#components'
 import { TerminalWindow, SafariWindow, Resume, Finder, TextFile, ImageFile, Contact } from '#windows';
 
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/react';
 
 gsap.registerPlugin(Draggable);
 
