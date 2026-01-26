@@ -33,34 +33,6 @@ const WindowWrapper = (Component, windowKey) => {
             const targetX = elementRect.left + elementRect.width / 2;
             const targetY = elementRect.top + elementRect.height / 2;
 
-            // gsap.fromTo(element, {
-            //     scale: 0.8,
-            //     opacity: 0,
-            //     y: 40
-            // }, {
-            //     scale: 1,
-            //     opacity: 1,
-            //     y: 0,
-            //     duration: 0.4,
-            //     ease: 'power3.out'
-            // })
-
-
-            // gsap.fromTo(element, {
-            //     scale: 0,
-            //     opacity: 0,
-            //     x: startX - targetX,
-            //     y: startY - targetY,
-            //     transformOrigin: 'center center'
-            // }, {
-            //     scale: 1,
-            //     opacity: 1,
-            //     x: 0,
-            //     y: 0,
-            //     duration: 3,
-            //     ease: 'back.inOut(1.2)'
-            // })
-
             const tl = gsap.timeline();
             
             tl.fromTo(element, {

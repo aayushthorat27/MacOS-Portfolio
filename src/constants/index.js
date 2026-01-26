@@ -34,7 +34,7 @@ const WORK_LOCATION = {
             icon: "/images/folder.png",
             kind: 'folder',
             position: "top-10 left-5", // icon position inside finder
-            windowPosition: "top-[15vh] right-20", // initial window position when opened
+            windowPosition: "top-[15vh] right-50", // initial window position when opened
             children: [
                 {
                     id: 1,
@@ -55,114 +55,104 @@ const WORK_LOCATION = {
                     icon: "/images/safari.png",
                     kind: 'file',
                     fileType: 'url',
-                    position: "top-20 right-20",
                     href: "https://iphone-website-tau.vercel.app/",
-
+                    position: "top-20 right-20",
+                },
+                {
+                    id: 3,
+                    name: "immersive-product-display.png",
+                    icon: "/images/image.png",
+                    kind: 'file',
+                    fileType: 'img',
+                    imageUrl: "/images/Iphone_project.png",
+                    position: "top-52 left-40",
                 }
             ]
         },
         // ▶ Project 2
         {
             id: 6,
-            name: "AI Resume Analyzer",
+            name: "AI Resume Builder",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-52 right-80",
-            windowPosition: "top-[20vh] left-7",
+            windowPosition: "top-[20vh] left-47",
             children: [
                 {
                     id: 1,
-                    name: "AI Resume Analyzer Project.txt",
+                    name: "AI Resume Builder Project.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
-                    position: "top-5 right-10",
+                    position: "top-25 left-10",
                     description: [
                         "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
                         "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
                         "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-                        "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+                        "This is currently under construction and is being developed as a full-stack application with Next.js, Tailwind CSS, and AI integration for intelligent resume analysis.",
                     ],
                 },
-                {
-                    id: 2,
-                    name: "ai-resume-analyzer.com",
-                    icon: "/images/safari.png",
-                    kind: "file",
-                    fileType: "url",
-                    href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
-                    position: "top-20 left-20",
-                },
-                {
-                    id: 4,
-                    name: "ai-resume-analyzer.png",
-                    icon: "/images/image.png",
-                    kind: "file",
-                    fileType: "img",
-                    position: "top-52 left-80",
-                    imageUrl: "/images/project-2.png",
-                },
-                {
-                    id: 5,
-                    name: "Design.fig",
-                    icon: "/images/plain.png",
-                    kind: "file",
-                    fileType: "fig",
-                    href: "https://google.com",
-                    position: "top-60 left-5",
-                },
+                // {
+                //     id: 2,
+                //     name: "ai-resume-builder.com",
+                //     icon: "/images/safari.png",
+                //     kind: "file",
+                //     fileType: "url",
+                //     href: "",
+                //     position: "top-20 left-20",
+                // },
+                // {
+                //     id: 4,
+                //     name: "ai-resume-builder.png",
+                //     icon: "/images/image.png",
+                //     kind: "file",
+                //     fileType: "img",
+                //     position: "top-52 left-80",
+                //     imageUrl: "/images/project.png",
+                // },
             ],
         },
 
         // ▶ Project 3
         {
             id: 7,
-            name: "Food Delivery App",
+            name: "Mac-OS Portfolio",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-10 left-80",
-            windowPosition: "top-[33vh] left-7",
+            windowPosition: "top-[50vh] left-60",
             children: [
                 {
                     id: 1,
-                    name: "Food Delivery App Project.txt",
+                    name: "Mac-OS Portfolio Project.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-                        "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-                        "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-                        "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+                        "The MacOS Portfolio is an interactive web-based portfolio that recreates the macOS Big Sur experience right in your browser.",
+                        "Instead of a traditional portfolio website, users can explore projects, skills, and contact info through a fully functional desktop environment with draggable windows, smooth animations, and authentic macOS interactions.",
+                        "Think of it like having a real Mac desktop—complete with a dock, finder windows, minimize effects, and native-style controls—all built to showcase work in a memorable, engaging way.",
+                        "It's built with React.js, GSAP, and Zustand for state management, featuring smooth GSAP animations and a pixel-perfect UI that feels just like the real thing.",
                     ],
                 },
                 {
                     id: 2,
-                    name: "food-delivery-app.com",
+                    name: "aayushthorat.me",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+                    href: "https://aayushthorat.me",
                     position: "top-10 right-20",
                 },
                 {
                     id: 4,
-                    name: "food-delivery-app.png",
+                    name: "portfolio-website.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
                     position: "top-52 right-80",
-                    imageUrl: "/images/project-3.png",
-                },
-                {
-                    id: 5,
-                    name: "Design.fig",
-                    icon: "/images/plain.png",
-                    kind: "file",
-                    fileType: "fig",
-                    href: "https://google.com",
-                    position: "top-60 right-20",
+                    imageUrl: "/images/mac-os-portfolio.png",
                 },
             ],
         },
@@ -192,16 +182,16 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-28 right-72",
-            imageUrl: "/images/adrian-2.jpg",
+            imageUrl: "/images/Aayush-2.jpeg",
         },
         {
             id: 3,
-            name: "conference-me.png",
+            name: "casual-me-2.png",
             icon: "/images/image.png",
             kind: "file",
             fileType: "img",
             position: "top-52 left-80",
-            imageUrl: "/images/adrian-3.jpeg",
+            imageUrl: "/images/Aayush-3.jpeg",
         },
         {
             id: 4,
@@ -266,6 +256,15 @@ const TRASH_LOCATION = {
             position: "top-40 left-80",
             imageUrl: "/images/trash-2.png",
         },
+        {
+            id: 3,
+            name: "trash3.png",
+            icon: "/images/image.png",
+            kind: "file",
+            fileType: "img",
+            position: "top-60 left-30",
+            imageUrl: "/images/trash-3.png",
+        },
   ],
 };
 
@@ -323,5 +322,81 @@ const BlogPosts = [
     }
 ]
 
+const socials = [
+    {
+        id: 1,
+        text: "GitHub",
+        icon: "/icons/github.svg",
+        // bg: "#f4656b",
+        bg: "#01040a",
+        link: "https://github.com/aayushthorat27",
+    },
+    {
+        id: 2,
+        text: "LinkedIn",
+        icon: "/icons/linkedin.svg",
+        // bg: "#05b6f6",
+        bg: "#0a66c2",
+        link: "https://www.linkedin.com/in/aayush-kailas-thorat/",
+    },
+    {
+        id: 3,
+        text: "Gmail",
+        icon: "/icons/gmail.svg",
+        // bg: "#d14836",
+        bg: "#b22234",
+        link: "mailto:aayushthorat27@gmail.com",
+    }
+]
 
-export { navLinks, navIcons, dockApps, WindowConfig, INITIAL_Z_INDEX, techStack, BlogPosts };
+const photosLinks = [
+  {
+    id: 1,
+    icon: "/icons/gicon1.svg",
+    title: "Library",
+  },
+  {
+    id: 2,
+    icon: "/icons/gicon2.svg",
+    title: "Memories",
+  },
+  {
+    id: 3,
+    icon: "/icons/file.svg",
+    title: "Places",
+  },
+  {
+    id: 4,
+    icon: "/icons/gicon4.svg",
+    title: "People",
+  },
+  {
+    id: 5,
+    icon: "/icons/gicon5.svg",
+    title: "Favorites",
+  },
+];
+
+const gallery = [
+  {
+    id: 1,
+    img: "/images/gal1.png",
+  },
+  {
+    id: 2,
+    img: "/images/gal2.png",
+  },
+  {
+    id: 3,
+    img: "/images/gal3.png",
+  },
+  {
+    id: 4,
+    img: "/images/gal4.png",
+  },
+];
+
+
+export { navLinks, navIcons, dockApps, 
+    WindowConfig, INITIAL_Z_INDEX, techStack, BlogPosts, 
+    socials, photosLinks, gallery };

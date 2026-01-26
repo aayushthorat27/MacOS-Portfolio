@@ -5,5 +5,6 @@ import Finder from "./Finder";
 import TextFile from "./TextFile";
 import ImageFile from "./ImageFile";
 import Contact from "./Contact";
+import Photos from "./Photos";
 
-export { TerminalWindow, SafariWindow, Resume, Finder, TextFile, ImageFile, Contact };
+export { TerminalWindow, SafariWindow, Resume, Finder, TextFile, ImageFile, Contact, Photos };

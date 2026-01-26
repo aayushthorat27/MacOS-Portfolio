@@ -1,4 +1,5 @@
 import { WindowControls } from "#components";
+import { socials } from "#constants";
 import WindowWrapper from "#hoc/WindowWrapper";
 
 const Contact = () => {
@@ -11,9 +12,20 @@ const Contact = () => {
             </div>
         </div>
         <div className="p-5 space-y-5">
-            <img src="/images/Aayush-1.jpg" alt="Aayush" className="w-20 rounded-full"/>
+            <img src="/images/Aayush-4.jpeg" alt="Aayush" className="w-20 rounded-full"/>
             <h3>Let's Connects</h3>
-            <p>GOt an Idea? A bug to squash? Or just wanna  talk tech? I'm in.</p>
+            <p>Got an Idea? A bug to squash? Or just wanna  talk tech? I'm in.</p>
+
+            <ul>
+                {socials.map(({ id, bg, link, icon, text }) => (
+                    <li key={id} style={{backgroundColor: bg}}>
+                        <a href={link} target="_blank" rel="noopener noreferrer">
+                            <img src={icon} alt={text} className="size-5"/>
+                            <p>{text}</p>
+                        </a>
+                    </li>
+                ))}
+            </ul>
         </div>
     </>
   )

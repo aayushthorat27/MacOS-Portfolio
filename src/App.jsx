@@ -1,8 +1,8 @@
 import gsap from 'gsap';
 import { Draggable } from 'gsap/Draggable';
 
-import { Dock, Navbar, Welcome } from '#components'
-import { TerminalWindow, SafariWindow, Resume, Finder, TextFile, ImageFile, Contact } from '#windows';
+import { Dock, Home, Navbar, Welcome } from '#components'
+import { TerminalWindow, SafariWindow, Resume, Finder, TextFile, ImageFile, Contact, Photos } from '#windows';
 
 import { Analytics } from '@vercel/analytics/react';
 
@@ -22,6 +22,8 @@ const App = () => {
       <TextFile />
       <ImageFile />
       <Contact />
+      <Home />
+      <Photos />
       <Analytics />
     </main>
   )
