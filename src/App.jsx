@@ -4,6 +4,8 @@ import { Draggable } from 'gsap/Draggable';
 import { Dock, Navbar, Welcome } from '#components'
 import { TerminalWindow, SafariWindow, Resume, Finder, TextFile, ImageFile, Contact } from '#windows';
 
+import { Analytics } from "@vercel/analytics/next"
+
 gsap.registerPlugin(Draggable);
 
 const App = () => {
@@ -20,6 +22,7 @@ const App = () => {
       <TextFile />
       <ImageFile />
       <Contact />
+      <Analytics />
     </main>
   )
 }
