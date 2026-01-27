@@ -5,6 +5,7 @@ import { Dock, Home, Navbar, Welcome } from '#components'
 import { TerminalWindow, SafariWindow, Resume, Finder, TextFile, ImageFile, Contact, Photos } from '#windows';
 
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 gsap.registerPlugin(Draggable);
 
@@ -25,6 +26,7 @@ const App = () => {
       <Home />
       <Photos />
       <Analytics />
+      <SpeedInsights />
     </main>
   )
 }
